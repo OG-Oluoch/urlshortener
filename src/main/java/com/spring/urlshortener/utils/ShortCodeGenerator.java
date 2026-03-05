@@ -11,8 +11,8 @@ public class ShortCodeGenerator {
     private static final int CODE_LENGTH = 6;
     private final SecureRandom secureRandom;
 
-    public ShortCodeGenerator(SecureRandom secureRandom) {
-        this.secureRandom = secureRandom;
+    public ShortCodeGenerator() {
+        this.secureRandom = new SecureRandom();
     }
 
     //generate a random short code of length 6 using base62 characters
